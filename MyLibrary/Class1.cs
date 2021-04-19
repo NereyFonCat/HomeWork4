@@ -1,20 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace HomeWork4._3
+namespace MyLibrary
 {
-    // Суханов 
-
-    // б) ** Создать библиотеку содержащую класс для работы с массивом. Продемонстрировать работу библиотеки
-
-    // Не знаю, как реализовать библиотеку с классом для работы с массивом. Пробовал создать библиотеку с классом для одномерного массива,
-    // Добавил в зависимость к одному проекту, ничего не работает. 
-
-    // в) *** Подсчитать частоту вхождения каждого элемента в массив (коллекция Dictionary<int, int>)
-    // С этим также не разобрался, вообще не могу понять...( 
-
-
-    // а) Дописать класс для работы с одномерным массивом.
     class Array
     {
         // Суханов 
@@ -101,20 +88,6 @@ namespace HomeWork4._3
                 }
                 return count;
             }
-        }
-    }
-    class Program
-    {
-        static void Main(string[] args)
-        { 
-            Array arr = new Array(10, 0, 2);
-            Array aInv = arr.Inverse();
-            Array aMulti = arr.Multi(3);
-            arr.Print();
-            aInv.Print();
-            aMulti.Print();
-            Console.WriteLine($"Сумма чисел в основно массиве равна {arr.Sum}");
-            Console.WriteLine($"Количество максиальных элементов в основном массиве {arr.MaxCount}"); 
         }
     }
 }
